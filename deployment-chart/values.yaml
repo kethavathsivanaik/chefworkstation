@@ -1,0 +1,14 @@
+name: chefworkstation 
+namespace:
+  name: chefworkstation
+ 
+image:
+  repository: chef/chefworkstation
+  tag: current
+
+replicaCount: 3
+
+service: 
+  port: 80
+  port1: 443
+  type: LoadBalancer
